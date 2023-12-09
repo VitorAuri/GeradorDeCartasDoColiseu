@@ -20,8 +20,8 @@
                 <div class="moldura"><img id="moldura" src="imagens/molduras/berllot.png"></div>
                 <div class="estrelas"><img id="estrelas" src="imagens/estrelas/10.png"></div>
                 <div class="custo">
-                    <p class="custo-numero" id="custo-p">???</p>
-                    <p class="custo-nome">Custo</p>
+                    <p class="custo-numero" id="custo-num">???</p>
+                    <p class="custo-nome" id="custo-p">Custo:</p>
                 </div>
                 <div class="hierarquia"><p class="hierarquia-p" id="hierarquia-pID">Hierarquia</p></div>
                 <div class="lenda"><img id="personagem" src="imagens/personagens/random.png"></div>
@@ -51,14 +51,15 @@
             </select>
             <h1 style="font-size: 0.8rem;">Selecionar Lenda</h1>
             <select class="estilizar" id="personagens">
-                <option value-name="imagens/splashArt/petra.png"  data-value="Desconhecido" value="imagens/personagens/random.png">Desconhecido</option>
+                <option value-name="imagens/splashArt/placeholder.png"  data-value="Desconhecido" value="imagens/personagens/random.png">Desconhecido</option>
+                <option value-name="imagens/splashArt/AdaSplash.png"  data-value="Ada" value="imagens/personagens/random.png">Ada</option>
             </select>
             <h1 style="font-size: 0.8rem;">Clã</h1>
             <select id="clã">
-                <option data-value="imagens/fundos/fundo-berllot.png" value="imagens/molduras/berllot.png">Berllot</option>
-                <option data-value="imagens/fundos/fundo-bichos-do-mato.png" value="imagens/molduras/bichos.png">Bichos do Mato</option>
-                <option data-value="imagens/fundos/fundo-firebirds.png" value="imagens/molduras/firebirds.png">Firebirds</option>
-                <option data-value="imagens/fundos/fundo-ulgrimnism.png" value="imagens/molduras/ulgrimnism.png">Ulgrimnism</option>
+                <option color-data="berllot" data-value="imagens/fundos/fundo-berllot.png" value="imagens/molduras/berllot.png">Berllot</option>
+                <option color-data="bichos-do-mato" data-value="imagens/fundos/fundo-bichos-do-mato.png" value="imagens/molduras/bichos.png">Bichos do Mato</option>
+                <option color-data="firebirds" data-value="imagens/fundos/fundo-firebirds.png" value="imagens/molduras/firebirds.png">Firebirds</option>
+                <option color-data="ulgrimnism" data-value="imagens/fundos/fundo-ulgrimnism.png" value="imagens/molduras/ulgrimnism.png">Ulgrimnism</option>
             </select>
             <h1 style="font-size: 0.8rem;">Hierarquia no Clã</h1>
             <select id="hierarquia">

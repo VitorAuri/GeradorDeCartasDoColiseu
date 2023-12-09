@@ -49,8 +49,9 @@
 .splash-art img{
     position: absolute;
     image-rendering: optimizeQuality;
-    z-index: 3;
+    z-index: 2;
     width: 300px;
+    filter:blur(1px);
 }
 
 /*TEXTO CARTA*/
@@ -59,49 +60,90 @@
     text-rendering: optimizeLegibility;
     z-index: 3;
     font-size: 1.2rem;
-    margin: 10px 30px;
+    margin: 10px 24px;
     font-weight: bold;
     width: 158px;
-    color: rgb(37, 26, 85 );
+    
 }
 .lenda-nome p{
     position: absolute;
     text-rendering: optimizeLegibility;
     z-index: 3;
     font-size: 1rem;
-    margin: 30px 30px;
+    margin: 30px 24px;
     width: 155px;
-    color: rgb(53, 33, 141);
 }
 .custo-nome{
     position: absolute;
     text-rendering: optimizeLegibility;
     z-index: 3;
     font-size: 1.6rem;
-    margin: 333px 53px;
+    margin: 355px 16px;
     width: 155px;
-    text-shadow: 0px 0px 2px gold;
-    color: rgb(37, 26, 85 );
 }
 .custo-numero{
     position: absolute;
     text-rendering: optimizeLegibility;
     z-index: 3;
-    font-size: 2rem;
-    margin: 352px 66px;
+    font-size: 1.7rem;
+    margin: 355px 0px;
     width: 155px;
-    text-shadow: 0px 0px 2px gold;
-    color: rgb(37, 26, 85 );
+    text-align: center;
 }
 .hierarquia-p{
     position: absolute;
+    margin: 335px 30px;
+    width: 200px;
+}
+.hierarquia{
+    position: absolute;
+    text-align: center;
     text-rendering: optimizeLegibility;
-    z-index: 2;
+    z-index: 3;
     font-size: 1.5rem;
     font-weight: lighter;
-    margin: 367px 180px;
+    
     width: 155px;
-    color: rgb(53, 33, 141);
 }
 /*CORES CLÃS*/
+/*Berllot*/
+.berllotNome{
+    color: rgb(37, 26, 85);
+}
+.berllotLendaEHierarquia{
+    color: rgb(53, 33, 141);
+}
+.berllotCusto{
+    color: rgb(224, 200, 242);
+}
+/*Bichos do Mato*/
+.bichosNome{
+    color: rgb(34, 52, 12);
+}
+.bichosCusto{
+    color: rgb(19, 50, 9);
+}
+.bichosLendaEHierarquia{
+    color: rgb(19, 50, 9);
+}
+/*Ulgrimnism*/
+.ulgrimnismNome{
+    color: rgb(79, 16, 6);
+}
+.ulgrimnismCusto{
+    color: rgb(110, 49, 15);
+}
+.ulgrimnismLendaEHierarquia{
+    color: rgb(108, 37, 9);
+}
+/*Firebirds*/
+.firebirdsNome{
+    color: rgb(70, 23, 9);
+}
+.firebirdsCusto{
+    color: rgb(110, 49, 15);
+}
+.firebirdsLendaEHierarquia{
+    color: rgb(110, 49, 15);
+}
 
