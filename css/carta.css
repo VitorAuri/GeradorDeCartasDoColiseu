@@ -1,0 +1,107 @@
+/*CARTA*/
+#carta{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    font-family: Enchanted;
+    left: 0;
+}
+#print{
+    width: 600px;
+    height: 790px;
+    display: flex;
+    justify-content: center;
+}
+/*IMAGENS CARTA*/
+.moldura img{
+    position: absolute;
+    image-rendering: optimizeQuality;
+    z-index: 2;
+    border-radius: 2px;
+    width: 300px;
+    border: solid 1px rgb(218, 218, 218);
+}
+.efeito img{
+    position: absolute;
+    image-rendering: optimizeQuality;
+    z-index: 1;
+    width: 300px;
+}
+.lenda img{
+    position: absolute;
+    image-rendering: optimizeQuality;
+    z-index: 1;
+    width: 300px;
+}
+.estrelas img{
+    position: absolute;
+    image-rendering: optimizeQuality;
+    z-index: 3;
+    width: 300px;
+}
+.fundo img{
+    position: absolute;
+    image-rendering: optimizeQuality;
+    z-index: 0;
+    width: 300px;
+    border-radius: 8px;
+}
+.splash-art img{
+    position: absolute;
+    image-rendering: optimizeQuality;
+    z-index: 3;
+    width: 300px;
+}
+
+/*TEXTO CARTA*/
+.nome p{
+    position: absolute;
+    text-rendering: optimizeLegibility;
+    z-index: 3;
+    font-size: 1.2rem;
+    margin: 10px 30px;
+    font-weight: bold;
+    width: 158px;
+    color: rgb(37, 26, 85 );
+}
+.lenda-nome p{
+    position: absolute;
+    text-rendering: optimizeLegibility;
+    z-index: 3;
+    font-size: 1rem;
+    margin: 30px 30px;
+    width: 155px;
+    color: rgb(53, 33, 141);
+}
+.custo-nome{
+    position: absolute;
+    text-rendering: optimizeLegibility;
+    z-index: 3;
+    font-size: 1.6rem;
+    margin: 333px 53px;
+    width: 155px;
+    text-shadow: 0px 0px 2px gold;
+    color: rgb(37, 26, 85 );
+}
+.custo-numero{
+    position: absolute;
+    text-rendering: optimizeLegibility;
+    z-index: 3;
+    font-size: 2rem;
+    margin: 352px 66px;
+    width: 155px;
+    text-shadow: 0px 0px 2px gold;
+    color: rgb(37, 26, 85 );
+}
+.hierarquia-p{
+    position: absolute;
+    text-rendering: optimizeLegibility;
+    z-index: 2;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    margin: 367px 180px;
+    width: 155px;
+    color: rgb(53, 33, 141);
+}
+/*CORES CLÃS*/
+
