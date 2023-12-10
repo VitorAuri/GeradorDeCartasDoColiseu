@@ -17,20 +17,6 @@ hierarquia.addEventListener('change', function(){
     document.getElementById('hierarquia-pID').innerHTML = hierarquia
 })
 
-/*Lenda Selecionada*/
-const personagens = document.getElementById('personagens')
-const lendaNome = document.getElementById('lenda-p')
-const splashArt = document.getElementById('splashArt')
-const personagem = document.getElementById('personagem')
-
-personagens.addEventListener('change', function () {
-
-    splashArt.src = personagens.options[personagens.selectedIndex].getAttribute("value-name")
-    lendaNome.innerHTML = personagens.options[personagens.selectedIndex].getAttribute("data-value")
-    personagem.src = personagens.options[personagens.selectedIndex].getAttribute("value")
-    
-});
-
 /*Moldura*/
 const moldura = document.getElementById('moldura')
 const clã = document.getElementById('clã')
@@ -41,49 +27,62 @@ const custoNumero = document.getElementById('custo-num')
 const custoParagrafo = document.getElementById('custo-p')
 const nomeJogador = document.getElementById('nome-p')
 const hierarquiaCor = document.getElementById('hierarquia-pID')
+
+
+const nomesClãs = [
+    'berllot',
+    'bichos',
+    'ulgrimnism',
+    'firebirds',
+]
+const classes = [
+    'Nome',
+    'Custo',
+    'LendaEHierarquia',
+]
+function removerClasses(){
+    for(i=0; i<=3; i++){
+        lendaNome.classList.remove(nomesClãs[i]+classes[0])
+        custoNumero.classList.remove(nomesClãs[i]+classes[1])
+        custoParagrafo.classList.remove(nomesClãs[i]+classes[1])
+
+        nomeJogador.classList.remove(nomesClãs[i]+classes[2])
+        hierarquiaCor.classList.remove(nomesClãs[i]+classes[1])
+    }
+}
+let index = 0
+function adicionarClasses(){
+    lendaNome.classList.add(nomesClãs[index]+classes[0])
+    custoNumero.classList.add(nomesClãs[index]+classes[1])
+    custoParagrafo.classList.add(nomesClãs[index]+classes[1])
+    nomeJogador.classList.add(nomesClãs[index]+classes[2])
+    hierarquiaCor.classList.add(nomesClãs[index]+classes[1])
+    index = 0
+}
 clã.addEventListener('change', function(){
     /*Fundo e Moldura de cada Clã*/
     moldura.src = clã.value
     fundo.src = clã.options[clã.selectedIndex].getAttribute("data-value")
 
-
     /*Mudar Cor de Acordo com Clã Selecionado*/
     let cor = clã.options[clã.selectedIndex].getAttribute("color-data")
     if(cor === 'berllot'){
-        lendaNome.classList.add('berllotNome')
-        custoNumero.classList.add('berllotCusto')
-        custoParagrafo.classList.add('berllotCusto')
-
-
-        nomeJogador.classList.add('berllotLendaEHierarquia')
-        hierarquiaCor.classList.add('berllotLendaEHierarquia')
+        removerClasses()
+        adicionarClasses()
     }
     else if(cor === 'bichos-do-mato'){
-        lendaNome.classList.add('bichosNome')
-        custoNumero.classList.add('bichosCusto')
-        custoParagrafo.classList.add('bichosCusto')
-
-
-        nomeJogador.classList.add('bichosLendaEHierarquia')
-        hierarquiaCor.classList.add('bichosLendaEHierarquia')
+        removerClasses()
+        index += 1
+        adicionarClasses()
     }
     else if(cor === 'ulgrimnism'){
-        lendaNome.classList.add('ulgrimnismNome')
-        custoNumero.classList.add('ulgrimnismCusto')
-        custoParagrafo.classList.add('ulgrimnismCusto')
-
-
-        nomeJogador.classList.add('ulgrimnismLendaEHierarquia')
-        hierarquiaCor.classList.add('ulgrimnismLendaEHierarquia')
+        removerClasses()
+        index += 2
+        adicionarClasses()
     }
     else if(cor === 'firebirds'){
-        lendaNome.classList.add('firebirdsNome')
-        custoNumero.classList.add('firebirdsCusto')
-        custoParagrafo.classList.add('firebirdsCusto')
-
-
-        nomeJogador.classList.add('firebirdsLendaEHierarquia')
-        hierarquiaCor.classList.add('firebirdsLendaEHierarquia')
+        removerClasses()
+        index += 3
+        adicionarClasses()
     }
-    
 });

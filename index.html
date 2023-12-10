@@ -12,15 +12,15 @@
         <!--Carta-->
             <div id="print">
                 <div id="carta" class="">
-                    <div class="nome"><p id="nome-p">Nome do Jogador</p></div>
-                    <div class="lenda-nome"><p id="lenda-p">Nome da Lenda</p></div>
+                    <div class="nome"><p id="nome-p" class="berllotLendaEHierarquia">Nome do Jogador</p></div>
+                    <div class="lenda-nome"><p id="lenda-p" class="berllotNome">Nome da Lenda</p></div>
                     <div class="moldura"><img id="moldura" src="imagens/molduras/berllot.png"></div>
                     <div class="estrelas"><img id="estrelas" src="imagens/estrelas/10.png"></div>
                     <div class="custo">
-                        <p class="custo-numero" id="custo-num">???</p>
-                        <p class="custo-nome" id="custo-p">Custo:</p>
+                        <p class="custo-numero berllotCusto" id="custo-num">???</p>
+                        <p class="custo-nome berllotCusto" id="custo-p">Custo:</p>
                     </div>
-                    <div class="hierarquia"><p class="hierarquia-p" id="hierarquia-pID">Hierarquia</p></div>
+                    <div class="hierarquia"><p class="hierarquia-p berllotCusto" id="hierarquia-pID">Hierarquia</p></div>
                     <div class="lenda"><img id="personagem" src="imagens/personagens/random.png"></div>
                     <div class="fundo"><img id="fundo" src="imagens/fundos/fundo-berllot.png"></div>
                     <!--<div class="efeito"><img src="imagens/efeito.png"></div>-->
@@ -71,9 +71,7 @@
     <div class="fundo-do-site"></div>
     
     <script src="js/interface.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
+    <script src="js/lendas.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
     <script type="text/javascript">
