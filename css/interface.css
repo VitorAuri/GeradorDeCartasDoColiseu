@@ -1,8 +1,8 @@
 #interface{
     position: absolute;
     z-index: 10;
-    top: 20%;
-    margin-left: 100px;
+    top: 0;
+    margin-top: 400px;
     width: 180px;
     height: 220px;
     background: linear-gradient(rgb(216, 140, 0),rgb(255, 182, 47),rgb(143, 93, 0));
@@ -27,15 +27,4 @@
     margin-top: 0.2rem;
     border: 1px solid rgb(167, 167, 167);
     box-shadow: 1px 1px 1px black;
-}
-@media (max-width: 881px) {
-    #interface{
-        position: absolute;
-        top: 0;
-        margin-left: 25%;
-        margin-top: 400px;
-        width: 240px;
-        height: 220px;
-
-    }
 }

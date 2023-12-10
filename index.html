@@ -8,80 +8,85 @@
     <link rel="stylesheet" href="css/interface.css">
     <title>Gerador de Cartas</title>
 </head>
-<body>
-    <div id="container-geral">
+<body id="body">
         <!--Carta-->
-        
-        <div class="centralizar">
-        <div id="print">
-            <div id="carta">
-                <div class="nome"><p id="nome-p">Nome do Jogador</p></div>
-                <div class="lenda-nome"><p id="lenda-p">Nome da Lenda</p></div>
-                <div class="moldura"><img id="moldura" src="imagens/molduras/berllot.png"></div>
-                <div class="estrelas"><img id="estrelas" src="imagens/estrelas/10.png"></div>
-                <div class="custo">
-                    <p class="custo-numero" id="custo-num">???</p>
-                    <p class="custo-nome" id="custo-p">Custo:</p>
+            <div id="print">
+                <div id="carta" class="">
+                    <div class="nome"><p id="nome-p">Nome do Jogador</p></div>
+                    <div class="lenda-nome"><p id="lenda-p">Nome da Lenda</p></div>
+                    <div class="moldura"><img id="moldura" src="imagens/molduras/berllot.png"></div>
+                    <div class="estrelas"><img id="estrelas" src="imagens/estrelas/10.png"></div>
+                    <div class="custo">
+                        <p class="custo-numero" id="custo-num">???</p>
+                        <p class="custo-nome" id="custo-p">Custo:</p>
+                    </div>
+                    <div class="hierarquia"><p class="hierarquia-p" id="hierarquia-pID">Hierarquia</p></div>
+                    <div class="lenda"><img id="personagem" src="imagens/personagens/random.png"></div>
+                    <div class="fundo"><img id="fundo" src="imagens/fundos/fundo-berllot.png"></div>
+                    <!--<div class="efeito"><img src="imagens/efeito.png"></div>-->
+                    <div class="splash-art"><img id="splashArt" src="imagens/splashArt/placeholder.png"></div>
                 </div>
-                <div class="hierarquia"><p class="hierarquia-p" id="hierarquia-pID">Hierarquia</p></div>
-                <div class="lenda"><img id="personagem" src="imagens/personagens/random.png"></div>
-                <div class="fundo"><img id="fundo" src="imagens/fundos/fundo-berllot.png"></div>
-                <!--<div class="efeito"><img src="imagens/efeito.png"></div>-->
-                <div class="splash-art"><img id="splashArt" src="imagens/splashArt/placeholder.png"></div>
+            </div>
+        
+
+            <!--Interface-->
+            <div id="interface">
+                <h1 style="font-size: 0.8rem;">Nome Jogador</h1>
+                <input id="nome" class="estilizar" type="text"><button class="estilizar-butão" onclick="nome()">Okay</button>
+                <h1 style="font-size: 0.8rem;">Custo</h1>
+                <select class="estilizar" id="estrela">
+                    <option data-value="10" value="imagens/estrelas/10.png">10</option>
+                    <option data-value="20" value="imagens/estrelas/20.png">20</option>
+                    <option data-value="30" value="imagens/estrelas/30.png">30</option>
+                    <option data-value="40" value="imagens/estrelas/40.png">40</option>
+                    <option data-value="50" value="imagens/estrelas/50.png">50</option>
+                    <option data-value="60" value="imagens/estrelas/60.png">60</option>
+                    <option data-value="70" value="imagens/estrelas/70.png">70</option>
+                    <option data-value="80" value="imagens/estrelas/80.png">80</option>
+                    <option data-value="90" value="imagens/estrelas/90.png">90</option>
+                    <option data-value="100" value="imagens/estrelas/100.png">100</option>
+                </select>
+                <h1 style="font-size: 0.8rem;">Selecionar Lenda</h1>
+                <select class="estilizar" id="personagens">
+                    <option value-name="imagens/splashArt/placeholder.png"  data-value="Desconhecido" value="imagens/personagens/random.png">Desconhecido</option>
+                    <option value-name="imagens/splashArt/AdaSplash.png"  data-value="Ada" value="imagens/personagens/random.png">Ada</option>
+                </select>
+                <h1 style="font-size: 0.8rem;">Clã</h1>
+                <select id="clã">
+                    <option color-data="berllot" data-value="imagens/fundos/fundo-berllot.png" value="imagens/molduras/berllot.png">Berllot</option>
+                    <option color-data="bichos-do-mato" data-value="imagens/fundos/fundo-bichos-do-mato.png" value="imagens/molduras/bichos.png">Bichos do Mato</option>
+                    <option color-data="firebirds" data-value="imagens/fundos/fundo-firebirds.png" value="imagens/molduras/firebirds.png">Firebirds</option>
+                    <option color-data="ulgrimnism" data-value="imagens/fundos/fundo-ulgrimnism.png" value="imagens/molduras/ulgrimnism.png">Ulgrimnism</option>
+                </select>
+                <h1 style="font-size: 0.8rem;">Hierarquia no Clã</h1>
+                <select id="hierarquia">
+                    <option value="Lider">Lider</option>
+                    <option value="Vice-Lider">Vice-Lider</option>
+                    <option value="Membro">Membro</option>
+                </select>
+                <button class="estilizar-butão" onclick="downloadCard()">Baixar Carta</button>
             </div>
         </div>
-        </div>
-
-        <!--Interface-->
-        <div id="interface">
-            <h1 style="font-size: 0.8rem;">Nome Jogador</h1>
-            <input id="nome" class="estilizar" type="text"><button class="estilizar-butão" onclick="nome()">Okay</button>
-            <h1 style="font-size: 0.8rem;">Custo</h1>
-            <select class="estilizar" id="estrela">
-                <option data-value="10" value="imagens/estrelas/10.png">10</option>
-                <option data-value="20" value="imagens/estrelas/20.png">20</option>
-                <option data-value="30" value="imagens/estrelas/30.png">30</option>
-                <option data-value="40" value="imagens/estrelas/40.png">40</option>
-                <option data-value="50" value="imagens/estrelas/50.png">50</option>
-                <option data-value="60" value="imagens/estrelas/60.png">60</option>
-                <option data-value="70" value="imagens/estrelas/70.png">70</option>
-                <option data-value="80" value="imagens/estrelas/80.png">80</option>
-                <option data-value="90" value="imagens/estrelas/90.png">90</option>
-                <option data-value="100" value="imagens/estrelas/100.png">100</option>
-            </select>
-            <h1 style="font-size: 0.8rem;">Selecionar Lenda</h1>
-            <select class="estilizar" id="personagens">
-                <option value-name="imagens/splashArt/placeholder.png"  data-value="Desconhecido" value="imagens/personagens/random.png">Desconhecido</option>
-                <option value-name="imagens/splashArt/AdaSplash.png"  data-value="Ada" value="imagens/personagens/random.png">Ada</option>
-            </select>
-            <h1 style="font-size: 0.8rem;">Clã</h1>
-            <select id="clã">
-                <option color-data="berllot" data-value="imagens/fundos/fundo-berllot.png" value="imagens/molduras/berllot.png">Berllot</option>
-                <option color-data="bichos-do-mato" data-value="imagens/fundos/fundo-bichos-do-mato.png" value="imagens/molduras/bichos.png">Bichos do Mato</option>
-                <option color-data="firebirds" data-value="imagens/fundos/fundo-firebirds.png" value="imagens/molduras/firebirds.png">Firebirds</option>
-                <option color-data="ulgrimnism" data-value="imagens/fundos/fundo-ulgrimnism.png" value="imagens/molduras/ulgrimnism.png">Ulgrimnism</option>
-            </select>
-            <h1 style="font-size: 0.8rem;">Hierarquia no Clã</h1>
-            <select id="hierarquia">
-                <option value="Lider">Lider</option>
-                <option value="Vice-Lider">Vice-Lider</option>
-                <option value="Membro">Membro</option>
-            </select>
-            <button class="estilizar-butão" onclick="downloadCard()">Baixar Carta</button>
-        </div>
-    </div>
     
     <div class="fundo-do-site"></div>
-
-    <footer class="footer"><h1><a href="#">Coliseu de Clãs</a></h1></footer>
-    
     
     <script src="js/interface.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
     <script type="text/javascript">
         function downloadCard() {
             var nodeToEnlarge = document.getElementById('carta');
+            
+            var body = document.getElementById('body');
+            setTimeout(function () {
+                body.style.display = 'initial'
+                body.style.justifyContent = 'initial'
+                nodeToEnlarge.style.marginLeft = '0'
+            }, 50)
+
             var nodeToDownload = document.getElementById('print');
 
             // Increase pixel ratio for higher quality
@@ -104,6 +109,13 @@
                         nodeToEnlarge.style.transform = 'scale(1)';
                     });
             }, 100); // Adjust the timeout value as needed
+
+            setTimeout(function () {
+                body.style.display = 'flex'
+                body.style.justifyContent = 'center'
+                nodeToEnlarge.style.marginLeft = '10%'
+            }, 200)
+
         }
     </script>
 </body>

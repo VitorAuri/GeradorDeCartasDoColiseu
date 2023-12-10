@@ -3,14 +3,12 @@
     position: absolute;
     display: flex;
     justify-content: center;
+    margin-left: 10%;
     font-family: Enchanted;
-    left: 0;
 }
 #print{
     width: 600px;
     height: 790px;
-    display: flex;
-    justify-content: center;
 }
 /*IMAGENS CARTA*/
 .moldura img{
@@ -19,7 +17,6 @@
     z-index: 2;
     border-radius: 2px;
     width: 300px;
-    border: solid 1px rgb(218, 218, 218);
 }
 .efeito img{
     position: absolute;
