@@ -1,9 +1,12 @@
 /*Nome do Jogador*/
-function nome(){
+/*function nome(){
     const nome = document.getElementById('nome').value
     document.getElementById('nome-p').innerText = nome
-    console.log(nome)
-}
+}*/
+nome.addEventListener('change', function(){
+    const nome = document.getElementById('nome').value
+    document.getElementById('nome-p').innerText = nome
+})
 
 /*Estrelas-Custo*/
 estrela.addEventListener('change', function(){

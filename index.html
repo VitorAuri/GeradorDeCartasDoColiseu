@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/geral.css">
     <link rel="stylesheet" href="css/carta.css">
     <link rel="stylesheet" href="css/interface.css">
+    <link rel="icon" href="imagens/icone.png"/>
     <title>Gerador de Cartas</title>
 </head>
 <body id="body">
@@ -27,11 +28,10 @@
                 </div>
             </div>
         
-
             <!--Interface-->
             <div id="interface">
                 <h1 style="font-size: 0.8rem;">Nome Jogador</h1>
-                <input id="nome" class="estilizar" type="text"><button class="estilizar-butão" onclick="nome()">Okay</button>
+                <input id="nome" class="estilizar" type="text"><button class="estilizar-butão" onsubmit="nome()">Okay</button>
                 <h1 style="font-size: 0.8rem;">Custo</h1>
                 <select class="estilizar" id="estrela">
                     <option data-value="10" value="imagens/estrelas/10.png">10</option>
@@ -128,7 +128,14 @@
                 <button class="estilizar-butão" onclick="downloadCard()">Baixar Carta</button>
             </div>
         </div>
-    
+
+        <div class="redes-sociais">
+            <h1>Redes Sociais</h1>
+            <a href="https://twitter.com/ThYaksa">@ThYaksa - Coliseu de Clãs</a>
+            <a href="https://twitter.com/NiceNameBH">@NiceNameBH - Programação</a>
+            <a href="https://twitter.com/codvox1">@Codvox1 - Design</a>
+        </div>
+
     <div class="fundo-do-site"></div>
     
     <script src="js/interface.js"></script>

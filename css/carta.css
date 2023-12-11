@@ -25,7 +25,6 @@
     width: 270px;
     margin-left: 15px;
     filter: drop-shadow(3px 2px 2px black) saturate(80%) contrast(130%);
-    /*filter: drop-shadow(0px 0px 10px rgb(183, 0, 255)) hue-rotate(321deg) saturate(60%);*/ /*BERLLOT*/
 }
 .estrelas img{
     position: absolute;
@@ -146,7 +145,7 @@
     color: rgb(58, 58, 58);
 }
 
-/*FILTROS DA CARTA PARA CADA CLÃ*/
+/*FILTRO DEGRADE PROPRIEDADES*/
 #filtro img{
     position: absolute;
     z-index: 3;

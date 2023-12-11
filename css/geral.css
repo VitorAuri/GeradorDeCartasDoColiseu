@@ -21,6 +21,37 @@
     filter: blur(5px);
     z-index: -1;
 }
+.redes-sociais{
+    position: absolute;
+    top: 0;
+    margin-top: 630px;
+    text-align: center;
+    display: flex-start;
+    justify-content: column;
+    text-shadow: 1px 1px 1px black;
+    background: linear-gradient(rgb(216, 140, 0),rgb(255, 182, 47),rgb(143, 93, 0));
+    border-radius: 8px;
+    border: 1px rgb(255, 255, 255) solid;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 260px;
+    height: 100px;
+}
+.redes-sociais h1{
+    color: white;
+}
+.redes-sociais a{
+    text-decoration: none;
+    font-weight: bold;
+    color: aqua;
+    font-size: 1rem;
+    transition: color 0.3s, font-size 0.3s;
+}
+.redes-sociais a:hover{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.05rem;
+    color: rgb(72, 255, 255);
+}
 .display{
     visibility: hidden;
 }
