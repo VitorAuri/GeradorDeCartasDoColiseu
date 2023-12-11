@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/geral.css">
+    <link rel="stylesheet" href="css/carta.css">
+    <link rel="stylesheet" href="css/interface.css">
+    <title>Gerador de Cartas</title>
+</head>
+<body id="body">
+        <!--Carta-->
+            <div id="print">
+                <div id="carta" class="">
+                    <div class="nome"><p id="nome-p" class="semLendaEHierarquia">Nome do Jogador</p></div>
+                    <div class="lenda-nome"><p id="lenda-p" class="semNome">Nome da Lenda</p></div>
+                    <div class="moldura"><img id="moldura" src="imagens/molduras/sem.png"></div>
+                    <div class="estrelas"><img id="estrelas" src="imagens/estrelas/10.png"></div>
+                    <div class="custo">
+                        <p class="custo-numero berllotCusto" id="custo-num">???</p>
+                        <p class="custo-nome berllotCusto" id="custo-p">Custo:</p>
+                    </div>
+                    <div class="hierarquia"><p class="hierarquia-p semCusto" id="hierarquia-pID">Membro</p></div>
+                    <div class="lenda"><img id="personagem" src="imagens/lenda/1desconhecido.png"></div>
+                    <div class="fundo"><img id="fundo" src="imagens/fundos/fundo-sem.png"></div>
+                </div>
+            </div>
+        
+
+            <!--Interface-->
+            <div id="interface">
+                <h1 style="font-size: 0.8rem;">Nome Jogador</h1>
+                <input id="nome" class="estilizar" type="text"><button class="estilizar-butão" onclick="nome()">Okay</button>
+                <h1 style="font-size: 0.8rem;">Custo</h1>
+                <select class="estilizar" id="estrela">
+                    <option data-value="10" value="imagens/estrelas/10.png">10</option>
+                    <option data-value="20" value="imagens/estrelas/20.png">20</option>
+                    <option data-value="30" value="imagens/estrelas/30.png">30</option>
+                    <option data-value="40" value="imagens/estrelas/40.png">40</option>
+                    <option data-value="50" value="imagens/estrelas/50.png">50</option>
+                    <option data-value="60" value="imagens/estrelas/60.png">60</option>
+                    <option data-value="70" value="imagens/estrelas/70.png">70</option>
+                    <option data-value="80" value="imagens/estrelas/80.png">80</option>
+                    <option data-value="90" value="imagens/estrelas/90.png">90</option>
+                    <option data-value="100" value="imagens/estrelas/100.png">100</option>
+                    <option data-value="110" value="imagens/estrelas/110.png">110</option>
+                    <option data-value="120" value="imagens/estrelas/120.png">120</option>
+                </select>
+                <h1 style="font-size: 0.8rem;">Selecionar Lenda</h1>
+                <select class="estilizar" id="personagens">
+                    <option data-value="Desconhecido" value="imagens/lenda/1desconhecido.png">Desconhecido</option>
+                    <option data-value="Ada" value="imagens/lenda/ada.png">Ada</option>
+                    <option data-value="Arcadia" value="imagens/lenda/arcadia.png">Arcadia</option>
+                    <option data-value="Artemis" value="imagens/lenda/artemis.png">Artemis</option>
+                    <option data-value="Asuri" value="imagens/lenda/asuri.png">Asuri</option>
+                    <option data-value="Azoth" value="imagens/lenda/azoth.png">Azoth</option>
+                    <option data-value="Barraza" value="imagens/lenda/barraza.png">Barraza</option>
+                    <option data-value="Bodvar" value="imagens/lenda/bodvar.png">Bodvar</option>
+                    <option data-value="Brynn" value="imagens/lenda/brynn.png">Brynn</option>
+                    <option data-value="Caspian" value="imagens/lenda/caspian.png">Caspian</option>
+                    <option data-value="Cassidy" value="imagens/lenda/cassidy.png">Cassidy</option>
+                    <option data-value="Cross" value="imagens/lenda/cross.png">Cross</option>
+                    <option data-value="Diana" value="imagens/lenda/diana.png">Diana</option>
+                    <option data-value="Dusk" value="imagens/lenda/dusk.png">Dusk</option>
+                    <option data-value="Ember" value="imagens/lenda/ember.png">Ember</option>
+                    <option data-value="Ezio" value="imagens/lenda/ezio.png">Ezio</option>
+                    <option data-value="Fait" value="imagens/lenda/fait.png">Fait</option>
+                    <option data-value="Gnash" value="imagens/lenda/gnash.png">Gnash</option>
+                    <option data-value="Hattori" value="imagens/lenda/hattori.png">Hattori</option>
+                    <option data-value="Isaiah" value="imagens/lenda/isaiah.png">Isaiah</option>
+                    <option data-value="Jaeyun" value="imagens/lenda/jaeyun.png">Jaeyun</option>
+                    <option data-value="Jhala" value="imagens/lenda/jhala.png">Jhala</option>
+                    <option data-value="Jiro" value="imagens/lenda/jiro.png">Jiro</option>
+                    <option data-value="Kaya" value="imagens/lenda/kaya.png">Kaya</option>
+                    <option data-value="Koji" value="imagens/lenda/koji.png">Koji</option>
+                    <option data-value="Kor" value="imagens/lenda/kor.png">Kor</option>
+                    <option data-value="Lin Fei" value="imagens/lenda/lin-fei.png">Lin Fei</option>
+                    <option data-value="Loki" value="imagens/lenda/loki.png">Loki</option>
+                    <option data-value="Lord Vraxx" value="imagens/lenda/lord-vraxx.png">Lord Vraxx</option>
+                    <option data-value="Lucien" value="imagens/lenda/lucien.png">Lucien</option>
+                    <option data-value="Magyar" value="imagens/lenda/magyar.png">Magyar</option>
+                    <option data-value="Mako" value="imagens/lenda/mako.png">Mako</option>
+                    <option data-value="Mirage" value="imagens/lenda/mirage.png">Mirage</option>
+                    <option data-value="Mordex" value="imagens/lenda/mordex.png">Mordex</option>
+                    <option data-value="Munin" value="imagens/lenda/munin.png">Munin</option>
+                    <option data-value="Nix" value="imagens/lenda/nix.png">Nix</option>
+                    <option data-value="Onyx" value="imagens/lenda/onyx.png">Onyx</option>
+                    <option data-value="Orion" value="imagens/lenda/orion.png">Orion</option>
+                    <option data-value="Petra" value="imagens/lenda/petra.png">Petra</option>
+                    <option data-value="Queen Nai" value="imagens/lenda/queen-nai.png">Queen Nai</option>
+                    <option data-value="Ragnir" value="imagens/lenda/ragnir.png">Ragnir</option>
+                    <option data-value="Rayman" value="imagens/lenda/rayman.png">Rayman</option>
+                    <option data-value="Red Raptor" value="imagens/lenda/red-raptor.png">Red Raptor</option>
+                    <option data-value="Reno" value="imagens/lenda/reno.png">Reno</option>
+                    <option data-value="Scarlet" value="imagens/lenda/scarlet.png">Scarlet</option>
+                    <option data-value="Sentinel" value="imagens/lenda/sentinel.png">Sentinel</option>
+                    <option data-value="Sidra" value="imagens/lenda/sidra.png">Sidra</option>
+                    <option data-value="Sir Roland" value="imagens/lenda/sir-roland.png">Sir Roland</option>
+                    <option data-value="Teros" value="imagens/lenda/teros.png">Teros</option>
+                    <option data-value="Tezca" value="imagens/lenda/tezca.png">Tezca</option>
+                    <option data-value="Thatch" value="imagens/lenda/thatch.png">Thatch</option>
+                    <option data-value="Thea" value="imagens/lenda/thea.png">Thea</option>
+                    <option data-value="Thor" value="imagens/lenda/thor.png">Thor</option>
+                    <option data-value="Ulgrim" value="imagens/lenda/ulgrim.png">Ulgrim</option>
+                    <option data-value="Val" value="imagens/lenda/val.png">Val</option>
+                    <option data-value="Vector" value="imagens/lenda/vector.png">Vector</option>
+                    <option data-value="Volkov" value="imagens/lenda/volkov.png">Volkov</option>
+                    <option data-value="Wu Shang" value="imagens/lenda/wu-shang.png">Wu Shang</option>
+                    <option data-value="Xull" value="imagens/lenda/xull.png">Xull</option>
+                    <option data-value="Yumiko" value="imagens/lenda/yumiko.png">Yumiko</option>
+                    <option data-value="Zariel" value="imagens/lenda/zariel.png">Zariel</option>
+                </select>
+                <h1 style="font-size: 0.8rem;">Clã</h1>
+                <select id="clã">
+                    <option color-data="sem" data-value="imagens/fundos/fundo-sem.png" value="imagens/molduras/sem.png">Sem Clã</option>
+                    <option color-data="berllot" data-value="imagens/fundos/fundo-berllot.png" value="imagens/molduras/berllot.png">Berllot</option>
+                    <option color-data="bichos-do-mato" data-value="imagens/fundos/fundo-bichos-do-mato.png" value="imagens/molduras/bichos.png">Bichos do Mato</option>
+                    <option color-data="firebirds" data-value="imagens/fundos/fundo-firebirds.png" value="imagens/molduras/firebirds.png">Firebirds</option>
+                    <option color-data="ulgrimnism" data-value="imagens/fundos/fundo-ulgrimnism.png" value="imagens/molduras/ulgrimnism.png">Ulgrimnism</option>
+                </select>
+                <h1 style="font-size: 0.8rem;">Hierarquia no Clã</h1>
+                <select id="hierarquia">
+                    <option value="Lider">Lider</option>
+                    <option value="Vice-Lider">Vice-Lider</option>
+                    <option value="Membro">Membro</option>
+                </select>
+                <button class="estilizar-butão" onclick="downloadCard()">Baixar Carta</button>
+            </div>
+        </div>
+    
+    <div class="fundo-do-site"></div>
+    
+    <script src="js/interface.js"></script>
+    <script src="js/lendas.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script type="text/javascript">
+        function downloadCard() {
+            var nodeToEnlarge = document.getElementById('carta');
+            
+            var body = document.getElementById('body');
+            setTimeout(function () {
+                body.style.display = 'initial'
+                body.style.justifyContent = 'initial'
+                nodeToEnlarge.style.marginLeft = '0'
+            }, 50)
+
+            var nodeToDownload = document.getElementById('print');
+
+            // Increase pixel ratio for higher quality
+            var scale = 2; // You can adjust this value
+
+            // Set the style attribute for higher quality only on the visual representation
+            nodeToEnlarge.style.transform = 'scale(' + scale + ')';
+
+            // After setting the style, wait for a moment for the browser to apply the changes
+            setTimeout(function () {
+                // Set the width and height of the canvas to match the content
+                var width = nodeToDownload.offsetWidth;
+                var height = nodeToDownload.offsetHeight;
+
+                domtoimage.toBlob(nodeToDownload, { width: width, height: height })
+                    .then(function (blob) {
+                        window.saveAs(blob, 'carta.png');
+
+                        // Reset the style after downloading
+                        nodeToEnlarge.style.transform = 'scale(1)';
+                    });
+            }, 100); // Adjust the timeout value as needed
+
+            setTimeout(function () {
+                body.style.display = 'flex'
+                body.style.justifyContent = 'center'
+                nodeToEnlarge.style.marginLeft = '10%'
+            }, 200)
+
+        }
+    </script>
+</body>
+</html>
