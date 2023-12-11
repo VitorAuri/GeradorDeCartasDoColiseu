@@ -65,7 +65,7 @@
     text-rendering: optimizeLegibility;
     z-index: 5;
     font-size: 1.6rem;
-    margin: 355px 16px;
+    margin: 347px 16px;
     width: 155px;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.37);
 }
@@ -74,17 +74,7 @@
     text-rendering: optimizeLegibility;
     z-index: 5;
     font-size: 1.7rem;
-    margin: 355px 0px;
-    width: 155px;
-    text-align: center;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.37);
-}
-.custo-numero-sem{
-    position: absolute;
-    text-rendering: optimizeLegibility;
-    z-index: 5;
-    font-size: 1.7rem;
-    margin: 355px 0px;
+    margin: 347px 0px;
     width: 155px;
     text-align: center;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.37);

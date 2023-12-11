@@ -68,11 +68,15 @@ function adicionarClasses(){
 function removerHierarquia(){
     hierarquia.classList.add('display')
     hierarquiaCor.innerHTML = ""
+    custoNumero.style.margin = '347px 0px'
+    custoParagrafo.style.margin = '347px 16px'
     hierarquiaTitulo.classList.add('display')
 }
 function adicionarHierarquia(){
     hierarquia.classList.remove('display')
     hierarquiaCor.innerHTML = "Membro"
+    custoNumero.style.margin = '355px 0px'
+    custoParagrafo.style.margin = '355px 16px'
     hierarquiaTitulo.classList.remove('display')
 }
 clã.addEventListener('change', function(){
