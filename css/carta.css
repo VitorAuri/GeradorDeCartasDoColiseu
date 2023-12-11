@@ -147,26 +147,10 @@
 }
 
 /*FILTROS DA CARTA PARA CADA CLÃ*/
-#filtro{
+#filtro img{
     position: absolute;
     z-index: 3;
     width: 300px;
     height: 394px;
-    margin-left: 300px;
-}
-.filtro-sem{
-    background: linear-gradient(rgb(0, 0, 105, 0.445), rgba(21, 21, 255, 0.3975), rgb(0, 0, 138, 0.397));
-}
-.filtro-berllot{
-    background: linear-gradient(rgba(112, 0, 116, 0.445), rgba(127, 0, 131, 0.397), rgba(127, 0, 131, 0.397));
-}
-.filtro-bichos{
-    background: linear-gradient(rgba(0, 255, 55, 0.445), rgba(0, 255, 55, 0.397), rgba(0, 255, 55, 0.397));
-}
-.filtro-ulgrimnism{
-    background: linear-gradient(rgba(255, 145, 0, 0.445), rgba(255, 182, 46, 0.397), rgba(255, 151, 16, 0.397));
-}
-.filtro-firebirds{
-    background: linear-gradient(rgba(238, 255, 0, 0.445), rgba(238, 255, 0, 0.397), rgba(0, 0, 138, 0.397));
 }
 

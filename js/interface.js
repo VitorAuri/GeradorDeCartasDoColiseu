@@ -29,7 +29,7 @@ const custoNumero = document.getElementById('custo-num')
 const custoParagrafo = document.getElementById('custo-p')
 const nomeJogador = document.getElementById('nome-p')
 const hierarquiaCor = document.getElementById('hierarquia-pID')
-const filtro = document.getElementById('filtro')
+const degrade = document.getElementById('degrade')
 
 const nomesClãs = [
     'berllot',
@@ -42,7 +42,6 @@ const classes = [
     'Nome',
     'Custo',
     'LendaEHierarquia',
-    'filtro-'
 ]
 function removerClasses(){
     for(i=0; i<=4; i++){
@@ -52,7 +51,6 @@ function removerClasses(){
 
         nomeJogador.classList.remove(nomesClãs[i]+classes[2])
         hierarquiaCor.classList.remove(nomesClãs[i]+classes[1])
-        filtro.classList.remove(classes[3]+nomesClãs[i])
     }
 }
 let index = 0
@@ -62,7 +60,6 @@ function adicionarClasses(){
     custoParagrafo.classList.add(nomesClãs[index]+classes[1])
     nomeJogador.classList.add(nomesClãs[index]+classes[2])
     hierarquiaCor.classList.add(nomesClãs[index]+classes[1])
-    filtro.classList.add(classes[3]+nomesClãs[index])
     index = 0
 }
 function removerHierarquia(){
@@ -82,7 +79,9 @@ function adicionarHierarquia(){
 clã.addEventListener('change', function(){
     /*Fundo e Moldura de cada Clã*/
     moldura.src = clã.value
+    degrade.src = clã.options[clã.selectedIndex].getAttribute('degrade')
     fundo.src = clã.options[clã.selectedIndex].getAttribute("data-value")
+
 
     /*Mudar Cor de Acordo com Clã Selecionado*/
     let cor = clã.options[clã.selectedIndex].getAttribute("color-data")
