@@ -21,3 +21,6 @@
     filter: blur(5px);
     z-index: -1;
 }
+.display{
+    visibility: hidden;
+}

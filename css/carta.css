@@ -14,28 +14,23 @@
 .moldura img{
     position: absolute;
     image-rendering: optimizeQuality;
-    z-index: 2;
+    z-index: 4;
     border-radius: 2px;
-    width: 300px;
-}
-.efeito img{
-    position: absolute;
-    image-rendering: optimizeQuality;
-    z-index: 1;
     width: 300px;
 }
 .lenda img{
     position: absolute;
     image-rendering: optimizeQuality;
-    z-index: 1;
+    z-index: 2;
     width: 270px;
     margin-left: 15px;
-    filter: drop-shadow(3px 2px 2px black);
+    filter: drop-shadow(3px 2px 2px black) saturate(80%) contrast(130%);
+    /*filter: drop-shadow(0px 0px 10px rgb(183, 0, 255)) hue-rotate(321deg) saturate(60%);*/ /*BERLLOT*/
 }
 .estrelas img{
     position: absolute;
     image-rendering: optimizeQuality;
-    z-index: 3;
+    z-index: 4;
     width: 300px;
 }
 .fundo img{
@@ -45,19 +40,12 @@
     width: 300px;
     border-radius: 8px;
 }
-.splash-art img{
-    position: absolute;
-    image-rendering: optimizeQuality;
-    z-index: 2;
-    width: 300px;
-    filter: sepia(70%) hue-rotate(10deg) saturate(10%) contrast(50%) drop-shadow(0px 0px 2px rgb(0, 0, 0));
-}
 
 /*TEXTO CARTA*/
 .nome p{
     position: absolute;
     text-rendering: optimizeLegibility;
-    z-index: 3;
+    z-index: 5;
     font-size: 1.2rem;
     margin: 10px 24px;
     font-weight: bold;
@@ -67,7 +55,7 @@
 .lenda-nome p{
     position: absolute;
     text-rendering: optimizeLegibility;
-    z-index: 3;
+    z-index: 5;
     font-size: 1rem;
     margin: 30px 24px;
     width: 155px;
@@ -75,7 +63,7 @@
 .custo-nome{
     position: absolute;
     text-rendering: optimizeLegibility;
-    z-index: 3;
+    z-index: 5;
     font-size: 1.6rem;
     margin: 355px 16px;
     width: 155px;
@@ -84,7 +72,17 @@
 .custo-numero{
     position: absolute;
     text-rendering: optimizeLegibility;
-    z-index: 3;
+    z-index: 5;
+    font-size: 1.7rem;
+    margin: 355px 0px;
+    width: 155px;
+    text-align: center;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.37);
+}
+.custo-numero-sem{
+    position: absolute;
+    text-rendering: optimizeLegibility;
+    z-index: 5;
     font-size: 1.7rem;
     margin: 355px 0px;
     width: 155px;
@@ -101,10 +99,9 @@
     position: absolute;
     text-align: center;
     text-rendering: optimizeLegibility;
-    z-index: 3;
+    z-index: 5;
     font-size: 1.5rem;
     font-weight: lighter;
-    
     width: 155px;
 }
 /*CORES CLÃS*/
@@ -112,18 +109,18 @@
 .berllotNome{
     color: rgb(37, 26, 85);
 }
-.berllotLendaEHierarquia{
-    color: rgb(53, 33, 141);
-}
 .berllotCusto{
     color: rgb(224, 200, 242);
+}
+.berllotLendaEHierarquia{
+    color: rgb(53, 33, 141);
 }
 /*Bichos do Mato*/
 .bichosNome{
     color: rgb(34, 52, 12);
 }
 .bichosCusto{
-    color: rgb(19, 50, 9);
+    color: rgb(172, 255, 145);
 }
 .bichosLendaEHierarquia{
     color: rgb(19, 50, 9);
@@ -159,13 +156,27 @@
     color: rgb(58, 58, 58);
 }
 
-@media (max-width: 881px){
-    #carta{
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        font-family: Enchanted;
-        left: 0;
-    }
+/*FILTROS DA CARTA PARA CADA CLÃ*/
+#filtro{
+    position: absolute;
+    z-index: 3;
+    width: 300px;
+    height: 394px;
+    margin-left: 300px;
+}
+.filtro-sem{
+    background: linear-gradient(rgb(0, 0, 105, 0.445), rgba(21, 21, 255, 0.3975), rgb(0, 0, 138, 0.397));
+}
+.filtro-berllot{
+    background: linear-gradient(rgba(112, 0, 116, 0.445), rgba(127, 0, 131, 0.397), rgba(127, 0, 131, 0.397));
+}
+.filtro-bichos{
+    background: linear-gradient(rgba(0, 255, 55, 0.445), rgba(0, 255, 55, 0.397), rgba(0, 255, 55, 0.397));
+}
+.filtro-ulgrimnism{
+    background: linear-gradient(rgba(255, 145, 0, 0.445), rgba(255, 182, 46, 0.397), rgba(255, 151, 16, 0.397));
+}
+.filtro-firebirds{
+    background: linear-gradient(rgba(238, 255, 0, 0.445), rgba(238, 255, 0, 0.397), rgba(0, 0, 138, 0.397));
 }
 

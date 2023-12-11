@@ -12,6 +12,8 @@ estrela.addEventListener('change', function(){
 }) 
 
 /*Hierarquia*/
+const hierarquia = document.getElementById('hierarquia')
+const hierarquiaTitulo = document.getElementById('hierarquia-titulo')
 hierarquia.addEventListener('change', function(){
     const hierarquia = document.getElementById('hierarquia').value
     document.getElementById('hierarquia-pID').innerHTML = hierarquia
@@ -27,7 +29,7 @@ const custoNumero = document.getElementById('custo-num')
 const custoParagrafo = document.getElementById('custo-p')
 const nomeJogador = document.getElementById('nome-p')
 const hierarquiaCor = document.getElementById('hierarquia-pID')
-
+const filtro = document.getElementById('filtro')
 
 const nomesClãs = [
     'berllot',
@@ -40,6 +42,7 @@ const classes = [
     'Nome',
     'Custo',
     'LendaEHierarquia',
+    'filtro-'
 ]
 function removerClasses(){
     for(i=0; i<=4; i++){
@@ -49,6 +52,7 @@ function removerClasses(){
 
         nomeJogador.classList.remove(nomesClãs[i]+classes[2])
         hierarquiaCor.classList.remove(nomesClãs[i]+classes[1])
+        filtro.classList.remove(classes[3]+nomesClãs[i])
     }
 }
 let index = 0
@@ -58,7 +62,18 @@ function adicionarClasses(){
     custoParagrafo.classList.add(nomesClãs[index]+classes[1])
     nomeJogador.classList.add(nomesClãs[index]+classes[2])
     hierarquiaCor.classList.add(nomesClãs[index]+classes[1])
+    filtro.classList.add(classes[3]+nomesClãs[index])
     index = 0
+}
+function removerHierarquia(){
+    hierarquia.classList.add('display')
+    hierarquiaCor.innerHTML = ""
+    hierarquiaTitulo.classList.add('display')
+}
+function adicionarHierarquia(){
+    hierarquia.classList.remove('display')
+    hierarquiaCor.innerHTML = "Membro"
+    hierarquiaTitulo.classList.remove('display')
 }
 clã.addEventListener('change', function(){
     /*Fundo e Moldura de cada Clã*/
@@ -69,25 +84,30 @@ clã.addEventListener('change', function(){
     let cor = clã.options[clã.selectedIndex].getAttribute("color-data")
     if(cor === 'berllot'){
         removerClasses()
+        adicionarHierarquia()
         adicionarClasses()
     }
     else if(cor === 'bichos-do-mato'){
         removerClasses()
+        adicionarHierarquia()
         index += 1
         adicionarClasses()
     }
     else if(cor === 'ulgrimnism'){
         removerClasses()
+        adicionarHierarquia()
         index += 2
         adicionarClasses()
     }
     else if(cor === 'firebirds'){
         removerClasses()
+        adicionarHierarquia()
         index += 3
         adicionarClasses()
     }
     else if(cor === 'sem'){
         removerClasses()
+        removerHierarquia()
         index += 4
         adicionarClasses()
     }

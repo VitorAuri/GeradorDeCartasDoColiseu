@@ -17,10 +17,11 @@
                     <div class="moldura"><img id="moldura" src="imagens/molduras/sem.png"></div>
                     <div class="estrelas"><img id="estrelas" src="imagens/estrelas/10.png"></div>
                     <div class="custo">
-                        <p class="custo-numero berllotCusto" id="custo-num">???</p>
-                        <p class="custo-nome berllotCusto" id="custo-p">Custo:</p>
+                        <p class="custo-numero semCusto" id="custo-num">???</p>
+                        <p class="custo-nome semCusto" id="custo-p">Custo:</p>
                     </div>
-                    <div class="hierarquia"><p class="hierarquia-p semCusto" id="hierarquia-pID">Membro</p></div>
+                    <div id="filtro" class="filtro-sem"></div>
+                    <div class="hierarquia"><p class="hierarquia-p semCusto" id="hierarquia-pID"></p></div>
                     <div class="lenda"><img id="personagem" src="imagens/lenda/1desconhecido.png"></div>
                     <div class="fundo"><img id="fundo" src="imagens/fundos/fundo-sem.png"></div>
                 </div>
@@ -118,11 +119,11 @@
                     <option color-data="firebirds" data-value="imagens/fundos/fundo-firebirds.png" value="imagens/molduras/firebirds.png">Firebirds</option>
                     <option color-data="ulgrimnism" data-value="imagens/fundos/fundo-ulgrimnism.png" value="imagens/molduras/ulgrimnism.png">Ulgrimnism</option>
                 </select>
-                <h1 style="font-size: 0.8rem;">Hierarquia no Clã</h1>
-                <select id="hierarquia">
-                    <option value="Lider">Lider</option>
-                    <option value="Vice-Lider">Vice-Lider</option>
+                <h1 style="font-size: 0.8rem;" id="hierarquia-titulo" class="display">Hierarquia no Clã</h1>
+                <select id="hierarquia" class="display">
                     <option value="Membro">Membro</option>
+                    <option value="Vice-Lider">Vice-Lider</option>
+                    <option value="Lider">Lider</option>
                 </select>
                 <button class="estilizar-butão" onclick="downloadCard()">Baixar Carta</button>
             </div>
