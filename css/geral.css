@@ -24,7 +24,7 @@
 .redes-sociais{
     position: absolute;
     top: 0;
-    margin-top: 630px;
+    margin-top: 650px;
     text-align: center;
     display: flex-start;
     justify-content: column;
@@ -53,5 +53,5 @@
     color: rgb(72, 255, 255);
 }
 .display{
-    visibility: hidden;
+    display: none;
 }

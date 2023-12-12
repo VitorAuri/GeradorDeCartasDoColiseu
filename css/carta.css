@@ -45,8 +45,8 @@
     position: absolute;
     text-rendering: optimizeLegibility;
     z-index: 5;
-    font-size: 1.2rem;
-    margin: 10px 24px;
+    font-size: 1.5rem;
+    margin: 8px 24px;
     font-weight: bold;
     width: 158px;
     
@@ -56,7 +56,7 @@
     text-rendering: optimizeLegibility;
     z-index: 5;
     font-size: 1rem;
-    margin: 30px 24px;
+    margin: 31px 24px;
     width: 155px;
 }
 .custo-nome{
