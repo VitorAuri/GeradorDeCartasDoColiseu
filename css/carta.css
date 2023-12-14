@@ -144,6 +144,26 @@
 .semLendaEHierarquia{
     color: rgb(58, 58, 58);
 }
+/*Inimigos da Moda*/
+.inimigosNome{
+    color: rgb(108, 20, 39);
+}
+.inimigosCusto{
+    color: rgb(254, 211, 196);
+}
+.inimigosLendaEHierarquia{
+    color: rgb(108, 20, 39);
+}
+/*Vasco*/
+.vascoNome{
+    color: rgb(213, 58, 72);
+}
+.vascoCusto{
+    color: rgb(255, 193, 107);
+}
+.vascoLendaEHierarquia{
+    color: rgb(182, 16, 41);
+}
 
 /*FILTRO DEGRADE PROPRIEDADES*/
 #filtro img{

@@ -40,6 +40,8 @@ const nomesClãs = [
     'ulgrimnism',
     'firebirds',
     'sem',
+    'inimigos',
+    'vasco',
 ]
 const classes = [
     'Nome',
@@ -47,7 +49,7 @@ const classes = [
     'LendaEHierarquia',
 ]
 function removerClasses(){
-    for(i=0; i<=4; i++){
+    for(i=0; i<=6; i++){
         lendaNome.classList.remove(nomesClãs[i]+classes[0])
         custoNumero.classList.remove(nomesClãs[i]+classes[1])
         custoParagrafo.classList.remove(nomesClãs[i]+classes[1])
@@ -115,6 +117,18 @@ clã.addEventListener('change', function(){
         removerClasses()
         removerHierarquia()
         index += 4
+        adicionarClasses()
+    }
+    else if(cor === 'inimigos-da-moda'){
+        removerClasses()
+        adicionarHierarquia()
+        index += 5
+        adicionarClasses()
+    }
+    else if(cor === 'vasco'){
+        removerClasses()
+        adicionarHierarquia()
+        index += 6
         adicionarClasses()
     }
 });
