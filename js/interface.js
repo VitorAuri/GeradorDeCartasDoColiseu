@@ -76,7 +76,7 @@ function removerHierarquia(){
 }
 function adicionarHierarquia(){
     hierarquia.classList.remove('display')
-    hierarquiaCor.innerHTML = "Membro"
+    hierarquiaCor.innerHTML = hierarquia.value
     custoNumero.style.margin = '355px 0px'
     custoParagrafo.style.margin = '355px 16px'
     hierarquiaTitulo.classList.remove('display')
