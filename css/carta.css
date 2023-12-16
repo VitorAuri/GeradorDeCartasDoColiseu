@@ -3,12 +3,28 @@
     position: absolute;
     display: flex;
     justify-content: center;
-    margin-left: 10%;
     font-family: Enchanted;
 }
 #print{
     width: 600px;
     height: 790px;
+}
+/*EFEITO FUNDO CARTA*/
+#efeito-fundo-carta1A{
+    position: absolute;
+    z-index: 0;
+    width: 620px;
+    top: -150px;
+    margin-left: 280px;
+    display: none;
+}
+#efeito-fundo-carta2A{
+    position: absolute;
+    z-index: -1;
+    width: 620px;
+    top: -150px;
+    margin-left: 280px;
+    display: none;
 }
 /*IMAGENS CARTA*/
 .moldura img{

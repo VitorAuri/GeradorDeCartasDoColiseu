@@ -11,8 +11,12 @@
 </head>
 <body id="body">
         <!--Carta-->
+        <div class="empurrar"></div>
+
             <div id="print">
                 <div id="carta" class="">
+                    <img id="efeito-fundo-carta1A" src="imagens/cartaEfeitoFundo/1A-efeito.png">
+                    <img id="efeito-fundo-carta2A" src="imagens/cartaEfeitoFundo/2A-efeito.png">
                     <div class="nome"><p id="nome-p" class="semLendaEHierarquia">Nome do Jogador</p></div>
                     <div class="lenda-nome"><p id="lenda-p" class="semNome">Nome da Lenda</p></div>
                     <div class="moldura"><img id="moldura" src="imagens/molduras/sem.png"></div>
@@ -27,6 +31,7 @@
                     <div class="fundo"><img id="fundo" src="imagens/fundos/fundo-sem.png"></div>
                 </div>
             </div>
+        
         
             <!--Interface-->
             <div id="interface">
@@ -114,77 +119,76 @@
 
                 <h1 style="font-size: 0.8rem;" class="display">Crossovers</h1>
                 <select class="estilizar display" id="crossovers">
-                    <option data-value="Shovel Knight" value="imagens/crossovers/shovel-knight.png">Shovel Knight</option>
-                    <option data-value="Black Knight" value="imagens/crossovers/black-knight.png">Black Knight</option>
-                    <option data-value="Plague Knight" value="imagens/crossovers/plague-knight.png">Plague Knight</option>
-                    <option data-value="Specter Knight" value="imagens/crossovers/specter-knight.png">Specter Knight</option>
-                    <option data-value="King Knight" value="imagens/crossovers/king-knight.png">King Knight</option>
-                    <option data-value="Enchantress" value="imagens/crossovers/enchantress.png">Enchantress</option>
-                    <option data-value="Globox" value="imagens/crossovers/globox.png">Globox</option>
-                    <option data-value="Barbara" value="imagens/crossovers/barbara.png">Barbara</option>
-                    <option data-value="Finn" value="imagens/crossovers/finn.png">Finn</option>
-                    <option data-value="Jake" value="imagens/crossovers/jake.png">Jake</option>
-                    <option data-value="Princess Bubblegum" value="imagens/crossovers/princess-bubblegum.png">Princess Bubblegum</option>
-                    <option data-value="Hellboy" value="imagens/crossovers/hellboy.png">Hellboy</option>
-                    <option data-value="Nimue" value="imagens/crossovers/nimue.png">Nimue</option>
-                    <option data-value="Daimo" value="imagens/crossovers/daimo.png">Daimo</option>
-                    <option data-value="Gruagach" value="imagens/crossovers/gruagach.png">Gruagach</option>
-                    <option data-value="John Cena" value="imagens/crossovers/john-cena.png">John Cena</option>
-                    <option data-value="Becky Lynch" value="imagens/crossovers/becky-lynch.png">Becky Lynch</option>
-                    <option data-value="Xavier Woods" value="imagens/crossovers/xavier-woods.png">Xavier Woods</option>
-                    <option data-value="The Rock" value="imagens/crossovers/the-rock.png">The Rock</option>
-                    <option data-value="Asuka" value="imagens/crossovers/asuka.png">Asuka</option>
-                    <option data-value="Roman Reigns" value="imagens/crossovers/roman-reigns.png">Roman Reigns</option>
-                    <option data-value="Macho Man" value="imagens/crossovers/macho-man.png">Macho Man</option>
-                    <option data-value="The Undertaker" value="imagens/crossovers/the-undertaker.png">The Undertaker</option>
-                    <option data-value="Lara Croft" value="imagens/crossovers/lara-croft-1.png">Lara Croft Versão 1</option>
-                    <option data-value="Lara Croft" value="imagens/crossovers/lara-croft-2.png">Lara Croft Versão 2</option>
-                    <option data-value="Akuma" value="imagens/crossovers/akuma.png">Akuma</option>
-                    <option data-value="Ryu" value="imagens/crossovers/ryu.png">Ryu</option>
-                    <option data-value="Chun-Li" value="imagens/crossovers/chun-li.png">Chun-Li</option>
-                    <option data-value="Dhalsim" value="imagens/crossovers/dhalsim.png">Dhalsim</option>
-                    <option data-value="Ken" value="imagens/crossovers/ken.png">Ken</option>
-                    <option data-value="Sakura" value="imagens/crossovers/sakura.png">Sakura</option>
-                    <option data-value="M.Bison" value="imagens/crossovers/m-bison.png">M.Bison</option>
-                    <option data-value="Luke" value="imagens/crossovers/luke.png">Luke</option>
-                    <option data-value="Eivor" value="imagens/crossovers/eivor.png">Eivor</option>
-                    <option data-value="Four Arms" value="imagens/crossovers/four-arms.png">Four Arms</option>
-                    <option data-value="Heatblast" value="imagens/crossovers/heatblast.png">Heatblast</option>
-                    <option data-value="Diamondhead" value="imagens/crossovers/diamondhead.png">Diamondhead</option>
-                    <option data-value="Storm Shadow" value="imagens/crossovers/storm-shadow.png">Storm Shadow</option>
-                    <option data-value="Snake Eyes" value="imagens/crossovers/snake-eyes.png">Snake Eyes</option>
-                    <option data-value="Alucard" value="imagens/crossovers/alucard.png">Alucard</option>
-                    <option data-value="Simon Belmont" value="imagens/crossovers/simon-belmont.png">Simon Belmont</option>
-                    <option data-value="The Master Chief" value="imagens/crossovers/the-master-chief.png">The Master Chief</option>
-                    <option data-value="The Arbiter" value="imagens/crossovers/the-arbiter.png">The Arbiter</option>
-                    <option data-value="Tai Lung" value="imagens/crossovers/tai-lung.png">Tai Lung</option>
-                    <option data-value="Po" value="imagens/crossovers/po.png">Po</option>
-                    <option data-value="Tigress" value="imagens/crossovers/tigress.png">Tigress</option>
-                    <option data-value="Amethyst" value="imagens/crossovers/amethyst.png">Amethyst</option>
-                    <option data-value="Stevonnie" value="imagens/crossovers/stevonnie.png">Stevonnie</option>
-                    <option data-value="Garnet" value="imagens/crossovers/garnet.png">Garnet</option>
-                    <option data-value="Pearl" value="imagens/crossovers/pearl.png">Pearl</option>
-                    <option data-value="Michonne" value="imagens/crossovers/michonne.png">Michonne</option>
-                    <option data-value="Daryl" value="imagens/crossovers/daryl.png">Daryl</option>
-                    <option data-value="Rick" value="imagens/crossovers/rick.png">Rick</option>
-                    <option data-value="Negan" value="imagens/crossovers/negan.png">Negan</option>
-                    <option data-value="Maggie" value="imagens/crossovers/maggie.png">Maggie</option>
-                    <option data-value="Donatello" value="imagens/crossovers/donatello.png">Donatello</option>
-                    <option data-value="Michelangelo" value="imagens/crossovers/michelangelo.png">Michelangelo</option>
-                    <option data-value="Raphael" value="imagens/crossovers/raphael.png">Raphael</option>
-                    <option data-value="Leonardo" value="imagens/crossovers/leonardo.png">Leonardo</option>
-                    <option data-value="Aang" value="imagens/crossovers/aang.png">Aang</option>
-                    <option data-value="Zuko" value="imagens/crossovers/zuko.png">Zuko</option>
-                    <option data-value="Toph" value="imagens/crossovers/toph.png">Toph</option>
-                    <option data-value="Devil Jin" value="imagens/crossovers/devil-jin.png">Devil Jin</option>
-                    <option data-value="Nina Williams" value="imagens/crossovers/nina-williams.png">Nina Williams</option>
-                    <option data-value="Yoshimitsu" value="imagens/crossovers/yoshimitsu.png">Yoshimitsu</option>
-                    <option data-value="Spongebob Squarepants" value="imagens/crossovers/spongebob-squarepants.png">SpongeBob Squarepants</option>
-                    <option data-value="Sandy Cheeks" value="imagens/crossovers/sandy-cheeks.png">Sandy Cheeks</option>
-                    <option data-value="Patrick Star" value="imagens/crossovers/patrick-star.png">Patrick Star</option>
+                    <option data-value="Shovel Knight" value="imagens/crossovers/shovel-knight.png">Shovel Knight (Shovel Knight)</option>
+                    <option data-value="Black Knight" value="imagens/crossovers/black-knight.png">Black Knight (Shovel Knight)</option>
+                    <option data-value="Plague Knight" value="imagens/crossovers/plague-knight.png">Plague Knight (Shovel Knight)</option>
+                    <option data-value="Specter Knight" value="imagens/crossovers/specter-knight.png">Specter Knight (Shovel Knight)</option>
+                    <option data-value="King Knight" value="imagens/crossovers/king-knight.png">King Knight (Shovel Knight)</option>
+                    <option data-value="Enchantress" value="imagens/crossovers/enchantress.png">Enchantress (Shovel Knight)</option>
+                    <option data-value="Globox" value="imagens/crossovers/globox.png">Globox (Rayman)</option>
+                    <option data-value="Barbara" value="imagens/crossovers/barbara.png">Barbara (Rayman)</option>
+                    <option data-value="Finn" value="imagens/crossovers/finn.png">Finn (Hora de Aventura)</option>
+                    <option data-value="Jake" value="imagens/crossovers/jake.png">Jake (Hora de Aventura)</option>
+                    <option data-value="Princess Bubblegum" value="imagens/crossovers/princess-bubblegum.png">Princess Bubblegum (Hora de Aventura)</option>
+                    <option data-value="Hellboy" value="imagens/crossovers/hellboy.png">Hellboy (Hellboy)</option>
+                    <option data-value="Nimue" value="imagens/crossovers/nimue.png">Nimue (Hellboy)</option>
+                    <option data-value="Daimo" value="imagens/crossovers/daimo.png">Daimo (Hellboy)</option>
+                    <option data-value="Gruagach" value="imagens/crossovers/gruagach.png">Gruagach (Hellboy)</option>
+                    <option data-value="John Cena" value="imagens/crossovers/john-cena.png">John Cena (WWE)</option>
+                    <option data-value="Becky Lynch" value="imagens/crossovers/becky-lynch.png">Becky Lynch (WWE)</option>
+                    <option data-value="Xavier Woods" value="imagens/crossovers/xavier-woods.png">Xavier Woods (WWE)</option>
+                    <option data-value="The Rock" value="imagens/crossovers/the-rock.png">The Rock (WWE)</option>
+                    <option data-value="Asuka" value="imagens/crossovers/asuka.png">Asuka (WWE)</option>
+                    <option data-value="Roman Reigns" value="imagens/crossovers/roman-reigns.png">Roman Reigns (WWE)</option>
+                    <option data-value="Macho Man" value="imagens/crossovers/macho-man.png">Macho Man (WWE)</option>
+                    <option data-value="The Undertaker" value="imagens/crossovers/the-undertaker.png">The Undertaker (WWE)</option>
+                    <option data-value="Lara Croft" value="imagens/crossovers/lara-croft-1.png">Lara Croft Versão 1 (Tomb Raider)</option>
+                    <option data-value="Lara Croft" value="imagens/crossovers/lara-croft-2.png">Lara Croft Versão 2 (Tomb Raider)</option>
+                    <option data-value="Akuma" value="imagens/crossovers/akuma.png">Akuma (Street Fighter)</option>
+                    <option data-value="Ryu" value="imagens/crossovers/ryu.png">Ryu (Street Fighter)</option>
+                    <option data-value="Chun-Li" value="imagens/crossovers/chun-li.png">Chun-Li (Street Fighter)</option>
+                    <option data-value="Dhalsim" value="imagens/crossovers/dhalsim.png">Dhalsim (Street Fighter)</option>
+                    <option data-value="Ken" value="imagens/crossovers/ken.png">Ken (Street Fighter)</option>
+                    <option data-value="Sakura" value="imagens/crossovers/sakura.png">Sakura (Street Fighter)</option>
+                    <option data-value="M.Bison" value="imagens/crossovers/m-bison.png">M.Bison (Street Fighter)</option>
+                    <option data-value="Luke" value="imagens/crossovers/luke.png">Luke (Street Fighter)</option>
+                    <option data-value="Eivor" value="imagens/crossovers/eivor.png">Eivor (Assasin's Creed)</option>
+                    <option data-value="Four Arms" value="imagens/crossovers/four-arms.png">Four Arms (Ben 10)</option>
+                    <option data-value="Heatblast" value="imagens/crossovers/heatblast.png">Heatblast (Ben 10)</option>
+                    <option data-value="Diamondhead" value="imagens/crossovers/diamondhead.png">Diamondhead (Ben 10)</option>
+                    <option data-value="Storm Shadow" value="imagens/crossovers/storm-shadow.png">Storm Shadow (G.I Joe)</option>
+                    <option data-value="Snake Eyes" value="imagens/crossovers/snake-eyes.png">Snake Eyes (G.I Joe)</option>
+                    <option data-value="Alucard" value="imagens/crossovers/alucard.png">Alucard (Castlevania)</option>
+                    <option data-value="Simon Belmont" value="imagens/crossovers/simon-belmont.png">Simon Belmont (Castlevania)</option>
+                    <option data-value="The Master Chief" value="imagens/crossovers/the-master-chief.png">The Master Chief (Halo)</option>
+                    <option data-value="The Arbiter" value="imagens/crossovers/the-arbiter.png">The Arbiter (Halo)</option>
+                    <option data-value="Tai Lung" value="imagens/crossovers/tai-lung.png">Tai Lung (Kung Fu Panda)</option>
+                    <option data-value="Po" value="imagens/crossovers/po.png">Po (Kung Fu Panda)</option>
+                    <option data-value="Tigress" value="imagens/crossovers/tigress.png">Tigress (Kung Fu Panda)</option>
+                    <option data-value="Amethyst" value="imagens/crossovers/amethyst.png">Amethyst (Steven Universo)</option>
+                    <option data-value="Stevonnie" value="imagens/crossovers/stevonnie.png">Stevonnie (Steven Universo)</option>
+                    <option data-value="Garnet" value="imagens/crossovers/garnet.png">Garnet (Steven Universo)</option>
+                    <option data-value="Pearl" value="imagens/crossovers/pearl.png">Pearl (Steven Universo)</option>
+                    <option data-value="Michonne" value="imagens/crossovers/michonne.png">Michonne (The Walking Dead)</option>
+                    <option data-value="Daryl" value="imagens/crossovers/daryl.png">Daryl (The Walking Dead)</option>
+                    <option data-value="Rick" value="imagens/crossovers/rick.png">Rick (The Walking Dead)</option>
+                    <option data-value="Negan" value="imagens/crossovers/negan.png">Negan (The Walking Dead)</option>
+                    <option data-value="Maggie" value="imagens/crossovers/maggie.png">Maggie (The Walking Dead)</option>
+                    <option data-value="Donatello" value="imagens/crossovers/donatello.png">Donatello (Tartarugas Ninjas)</option>
+                    <option data-value="Michelangelo" value="imagens/crossovers/michelangelo.png">Michelangelo (Tartarugas Ninjas)</option>
+                    <option data-value="Raphael" value="imagens/crossovers/raphael.png">Raphael (Tartarugas Ninjas)</option>
+                    <option data-value="Leonardo" value="imagens/crossovers/leonardo.png">Leonardo (Tartarugas Ninjas)</option>
+                    <option data-value="Aang" value="imagens/crossovers/aang.png">Aang (Avatar)</option>
+                    <option data-value="Zuko" value="imagens/crossovers/zuko.png">Zuko (Avatar)</option>
+                    <option data-value="Toph" value="imagens/crossovers/toph.png">Toph (Avatar)</option>
+                    <option data-value="Devil Jin" value="imagens/crossovers/devil-jin.png">Devil Jin (Tekken)</option>
+                    <option data-value="Nina Williams" value="imagens/crossovers/nina-williams.png">Nina Williams (Tekken)</option>
+                    <option data-value="Yoshimitsu" value="imagens/crossovers/yoshimitsu.png">Yoshimitsu (Tekken)</option>
+                    <option data-value="Spongebob Squarepants" value="imagens/crossovers/spongebob-squarepants.png">SpongeBob Squarepants (Bob Esponja)</option>
+                    <option data-value="Sandy Cheeks" value="imagens/crossovers/sandy-cheeks.png">Sandy Cheeks (Bob Esponja)</option>
+                    <option data-value="Patrick Star" value="imagens/crossovers/patrick-star.png">Patrick Star (Bob Esponja)</option>
 
-                    <option data-value="Yazika" value="imagens/crossovers/yaksa.png">Yazika</option>
-                    
+                    <option data-value="Yazika" value="imagens/crossovers/yaksa.png">Yazika (Coliseu de Clãs)</option>
                 </select>
 
                 <button onclick="ativar()" id="ativarCrossovers" class="estilizar estilizar-butão">Ativar Crossovers</button>
@@ -192,13 +196,13 @@
 
                 <h1 style="font-size: 0.8rem;">Clã</h1>
                 <select id="clã">
-                    <option degrade="imagens/degrade/degrade-sem.png" color-data="sem" data-value="imagens/fundos/fundo-sem.png" value="imagens/molduras/sem.png">Sem Clã</option>
-                    <option degrade="imagens/degrade/degrade-berllot.png" color-data="berllot" data-value="imagens/fundos/fundo-berllot.png" value="imagens/molduras/berllot.png">Berllot</option>
-                    <option degrade="imagens/degrade/degrade-bichos.png" color-data="bichos-do-mato" data-value="imagens/fundos/fundo-bichos.png" value="imagens/molduras/bichos.png">Bichos do Mato</option>
-                    <option degrade="imagens/degrade/degrade-firebirds.png" color-data="firebirds" data-value="imagens/fundos/fundo-firebirds.png" value="imagens/molduras/firebirds.png">Firebirds</option>
-                    <option degrade="imagens/degrade/degrade-ulgrimnism.png" color-data="ulgrimnism" data-value="imagens/fundos/fundo-ulgrimnism.png" value="imagens/molduras/ulgrimnism.png">Ulgrimnism</option>
-                    <option degrade="imagens/degrade/degrade-vasco.png" color-data="vasco" data-value="imagens/fundos/fundo-ulgrimnism.png" value="imagens/molduras/vasco.png">Vasco</option>
-                    <option degrade="imagens/degrade/degrade-inimigos.png" color-data="inimigos-da-moda" data-value="imagens/fundos/fundo-inimigos.png" value="imagens/molduras/inimigos.png">Inimigos da Moda</option>
+                    <option fundo-site="imagens/fundosSite/sem.png" degrade="imagens/degrade/degrade-sem.png" color-data="sem" data-value="imagens/fundos/fundo-sem.png" value="imagens/molduras/sem.png">Sem Clã</option>
+                    <option fundo-site="imagens/fundosSite/berllot.png" degrade="imagens/degrade/degrade-berllot.png" color-data="berllot" data-value="imagens/fundos/fundo-berllot.png" value="imagens/molduras/berllot.png">Berllot</option>
+                    <option fundo-site="imagens/fundosSite/bichos.png" degrade="imagens/degrade/degrade-bichos.png" color-data="bichos-do-mato" data-value="imagens/fundos/fundo-bichos.png" value="imagens/molduras/bichos.png">Bichos do Mato</option>
+                    <option fundo-site="imagens/fundosSite/firebirds.png" degrade="imagens/degrade/degrade-firebirds.png" color-data="firebirds" data-value="imagens/fundos/fundo-firebirds.png" value="imagens/molduras/firebirds.png">Firebirds</option>
+                    <option fundo-site="imagens/fundosSite/ulgrimnism.png" degrade="imagens/degrade/degrade-ulgrimnism.png" color-data="ulgrimnism" data-value="imagens/fundos/fundo-ulgrimnism.png" value="imagens/molduras/ulgrimnism.png">Ulgrimnism</option>
+                    <option fundo-site="imagens/fundosSite/vasco.png" degrade="imagens/degrade/degrade-vasco.png" color-data="vasco" data-value="imagens/fundos/fundo-ulgrimnism.png" value="imagens/molduras/vasco.png">Vasco</option>
+                    <option fundo-site="imagens/fundosSite/inimigos.png" degrade="imagens/degrade/degrade-inimigos.png" color-data="inimigos-da-moda" data-value="imagens/fundos/fundo-inimigos.png" value="imagens/molduras/inimigos.png">Inimigos da Moda</option>
                 </select>
                 <h1 style="font-size: 0.8rem;" id="hierarquia-titulo" class="display">Hierarquia no Clã</h1>
                 <select id="hierarquia" class="display">
@@ -210,14 +214,14 @@
             </div>
         </div>
 
-        <div class="redes-sociais">
+        <div id="redes-sociais">
             <h1>Redes Sociais</h1>
             <a href="https://twitter.com/ThYaksa">@ThYaksa - Coliseu de Clãs</a>
             <a href="https://twitter.com/NiceNameBH">@NiceNameBH - Programação</a>
             <a href="https://twitter.com/codvox1">@Codvox1 - Design</a>
         </div>
 
-    <div class="fundo-do-site"></div>
+    <div><img id="fundo-site" src="imagens/fundosSite/sem.png"></div>
     
     <script src="js/interface.js"></script>
     <script src="js/lendas.js"></script>

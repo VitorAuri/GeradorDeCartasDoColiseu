@@ -2,10 +2,10 @@
     position: absolute;
     z-index: 10;
     top: 0;
-    margin-top: 400px;
-    width: 180px;
+    margin-top: 430px;
+    width: 270px;
     height: 245px;
-    background: linear-gradient(rgb(216, 140, 0),rgb(255, 182, 47),rgb(143, 93, 0));
+    background: linear-gradient(rgb(163, 163, 163),rgb(124, 124, 124),rgb(88, 88, 88));
     border: 1px rgb(255, 255, 255) solid;
     display: flex;
     justify-self: center;

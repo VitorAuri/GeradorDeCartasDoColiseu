@@ -81,53 +81,82 @@ function adicionarHierarquia(){
     custoParagrafo.style.margin = '355px 16px'
     hierarquiaTitulo.classList.remove('display')
 }
+const estiloInterface = document.getElementById('interface')
+const estiloRedesSociais = document.getElementById('redes-sociais')
+
+const fundoSite = document.getElementById('fundo-site')
+
+/*Cores na interface para cada Clã*/
+const berllot = 'linear-gradient(rgb(141, 53, 153),rgb(176, 52, 192),rgb(70, 49, 104))'
+const sem = 'linear-gradient(rgb(163, 163, 163),rgb(124, 124, 124),rgb(88, 88, 88))'
+const inimigos = 'linear-gradient(rgb(190, 39, 39),rgb(201, 45, 45),rgb(122, 18, 18))'
+const bichos = 'linear-gradient(rgb(64, 175, 30),rgb(109, 219, 76),rgb(37, 105, 16))'
+const firebirds = 'linear-gradient(rgb(202, 192, 50),rgb(235, 222, 49),rgb(189, 178, 23))'
+const ulgrimnism = 'linear-gradient(rgb(226, 132, 24),rgb(255, 162, 55),rgb(214, 130, 34))'
+const vasco = 'linear-gradient(rgb(37, 37, 37),rgb(88, 83, 83),rgb(44, 41, 41))'
+
 clã.addEventListener('change', function(){
     /*Fundo e Moldura de cada Clã*/
     moldura.src = clã.value
     degrade.src = clã.options[clã.selectedIndex].getAttribute('degrade')
     fundo.src = clã.options[clã.selectedIndex].getAttribute("data-value")
+    fundoSite.src = clã.options[clã.selectedIndex].getAttribute('fundo-site')
 
 
     /*Mudar Cor de Acordo com Clã Selecionado*/
     let cor = clã.options[clã.selectedIndex].getAttribute("color-data")
     if(cor === 'berllot'){
         removerClasses()
+        estiloInterface.style.background = berllot
+        estiloRedesSociais.style.background = berllot
         adicionarHierarquia()
         adicionarClasses()
     }
     else if(cor === 'bichos-do-mato'){
         removerClasses()
         adicionarHierarquia()
+        estiloInterface.style.background = bichos
+        estiloRedesSociais.style.background = bichos
         index += 1
         adicionarClasses()
     }
     else if(cor === 'ulgrimnism'){
         removerClasses()
         adicionarHierarquia()
+        estiloInterface.style.background = ulgrimnism
+        estiloRedesSociais.style.background = ulgrimnism
         index += 2
         adicionarClasses()
     }
     else if(cor === 'firebirds'){
         removerClasses()
         adicionarHierarquia()
+        estiloInterface.style.background = firebirds
+        estiloRedesSociais.style.background = firebirds
         index += 3
         adicionarClasses()
     }
     else if(cor === 'sem'){
         removerClasses()
         removerHierarquia()
+        estiloInterface.style.background = sem
+        estiloRedesSociais.style.background = sem
         index += 4
         adicionarClasses()
     }
     else if(cor === 'inimigos-da-moda'){
         removerClasses()
         adicionarHierarquia()
+        estiloInterface.style.background = inimigos
+        estiloRedesSociais.style.background = inimigos
         index += 5
         adicionarClasses()
     }
     else if(cor === 'vasco'){
         removerClasses()
         adicionarHierarquia()
+        estiloInterface.style.background = vasco
+        estiloRedesSociais.style.background = vasco
         index += 6
         adicionarClasses()
     }
