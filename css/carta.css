@@ -3,6 +3,7 @@
     position: absolute;
     display: flex;
     justify-content: center;
+    margin-left: 10%;
     font-family: Enchanted;
 }
 #print{
