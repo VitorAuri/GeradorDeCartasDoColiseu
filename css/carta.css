@@ -14,10 +14,15 @@
 #efeito-fundo-carta1A{
     position: absolute;
     z-index: 0;
-    width: 620px;
-    top: -150px;
-    margin-left: 280px;
-    display: none;
+    width: 450px;
+    height: 510px;
+    margin-top: -50px;
+    margin-left: 308px;
+}
+@media (max-width: 450px) {
+    #efeito-fundo-carta1A{
+        display: none;
+    }
 }
 #efeito-fundo-carta2A{
     position: absolute;
