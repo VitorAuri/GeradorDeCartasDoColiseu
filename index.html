@@ -15,8 +15,7 @@
 
             <div id="print">
                 <div id="carta" class="">
-                    <img id="efeito-fundo-carta1A" src="imagens/cartaEfeitoFundo/1A-efeito.png">
-                    <img id="efeito-fundo-carta2A" src="imagens/cartaEfeitoFundo/2A-efeito.png">
+                    <img id="efeito-fundo-carta1A" src="imagens/cartaEfeitoFundo/3A-teste.png">
                     <div class="nome"><p id="nome-p" class="semLendaEHierarquia">Nome do Jogador</p></div>
                     <div class="lenda-nome"><p id="lenda-p" class="semNome">Nome da Lenda</p></div>
                     <div class="moldura"><img id="moldura" src="imagens/molduras/sem.png"></div>
@@ -229,10 +228,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
     <script type="text/javascript">
         function downloadCard() {
+
+            const efeitoFundo = document.getElementById('efeito-fundo-carta1A')
             var nodeToEnlarge = document.getElementById('carta');
             
             var body = document.getElementById('body');
             setTimeout(function () {
+                efeitoFundo.style.display = 'none'
                 body.style.display = 'initial'
                 body.style.justifyContent = 'initial'
                 nodeToEnlarge.style.marginLeft = '0'
@@ -262,6 +264,7 @@
             }, 100); // Adjust the timeout value as needed
 
             setTimeout(function () {
+                efeitoFundo.style.display = 'initial'
                 body.style.display = 'flex'
                 body.style.justifyContent = 'center'
                 nodeToEnlarge.style.marginLeft = '10%'
