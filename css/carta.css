@@ -116,44 +116,44 @@
     width: 155px;
 }
 /*CORES CLÃS*/
-/*Berllot*/
-.berllotNome{
+/*Purple*/
+.purpleNome{
     color: rgb(37, 26, 85);
 }
-.berllotCusto{
+.purpleCusto{
     color: rgb(224, 200, 242);
 }
-.berllotLendaEHierarquia{
+.purpleLendaEHierarquia{
     color: rgb(53, 33, 141);
 }
-/*Bichos do Mato*/
-.bichosNome{
+/*Green*/
+.greenNome{
     color: rgb(34, 52, 12);
 }
-.bichosCusto{
+.greenCusto{
     color: rgb(172, 255, 145);
 }
-.bichosLendaEHierarquia{
+.greenLendaEHierarquia{
     color: rgb(19, 50, 9);
 }
-/*Ulgrimnism*/
-.ulgrimnismNome{
+/*Orange*/
+.orangeNome{
     color: rgb(79, 16, 6);
 }
-.ulgrimnismCusto{
+.orangeCusto{
     color: rgb(255, 133, 67);
 }
-.ulgrimnismLendaEHierarquia{
+.orangeLendaEHierarquia{
     color: rgb(108, 37, 9);
 }
-/*Firebirds*/
-.firebirdsNome{
+/*Yellow*/
+.yellowNome{
     color: rgb(70, 23, 9);
 }
-.firebirdsCusto{
+.yellowCusto{
     color: rgb(255, 237, 74);
 }
-.firebirdsLendaEHierarquia{
+.yellowLendaEHierarquia{
     color: rgb(110, 49, 15);
 }
 /*Sem Clã*/
@@ -166,27 +166,67 @@
 .semLendaEHierarquia{
     color: rgb(58, 58, 58);
 }
-/*Inimigos da Moda*/
-.inimigosNome{
+/*Red*/
+.redNome{
     color: rgb(108, 20, 39);
 }
-.inimigosCusto{
+.redCusto{
     color: rgb(254, 211, 196);
 }
-.inimigosLendaEHierarquia{
+.redLendaEHierarquia{
     color: rgb(108, 20, 39);
 }
-/*Vasco*/
-.vascoNome{
+/*Black*/
+.blackNome{
     color: rgb(213, 58, 72);
 }
-.vascoCusto{
+.blackCusto{
     color: rgb(255, 193, 107);
 }
-.vascoLendaEHierarquia{
+.blackLendaEHierarquia{
     color: rgb(182, 16, 41);
 }
-
+/*Pink*/
+.pinkNome{
+    color: rgb(74, 21, 102);
+}
+.pinkCusto{
+    
+    color: rgb(255, 214, 249);
+}
+.pinkLendaEHierarquia{
+    color: rgb(124, 25, 162);
+}
+/*Blue*/
+.blueNome{
+    color: rgb(8, 42, 69);
+}
+.blueCusto{
+    color: rgb(201, 232, 255);
+}
+.blueLendaEHierarquia{
+    color: rgb(23, 53, 122);
+}
+/*White*/
+.whiteNome{
+    color: rgb(62, 45, 106);
+}
+.whiteCusto{
+    color: rgb(237, 217, 251);
+}
+.whiteLendaEHierarquia{
+    color: rgb(72, 78, 121);
+}
+/*Cyan*/
+.cyanNome{
+    color: rgb(104, 45, 20);
+}
+.cyanCusto{
+    color: rgb(210, 243, 228);
+}
+.cyanLendaEHierarquia{
+    color: rgb(170, 87, 25);
+}
 /*FILTRO DEGRADE PROPRIEDADES*/
 #filtro img{
     position: absolute;
