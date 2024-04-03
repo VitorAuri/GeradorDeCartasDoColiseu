@@ -107,6 +107,7 @@
                     <option data-value="Ulgrim" value="imagens/lenda/ulgrim.png">Ulgrim</option>
                     <option data-value="Val" value="imagens/lenda/val.png">Val</option>
                     <option data-value="Vector" value="imagens/lenda/vector.png">Vector</option>
+                    <option data-value="Vivi" value="imagens/lenda/vivi.png">Vivi</option>
                     <option data-value="Volkov" value="imagens/lenda/volkov.png">Volkov</option>
                     <option data-value="Wu Shang" value="imagens/lenda/wu-shang.png">Wu Shang</option>
                     <option data-value="Xull" value="imagens/lenda/xull.png">Xull</option>
@@ -116,7 +117,6 @@
 
                 <h1 class="display tituloInterface">Crossovers</h1>
                 <select class="estilizar display" id="crossovers">
-                    <option data-value="Desconhecido" value="imagens/lenda/1desconhecido.png">Desconhecido</option>
                     <option data-value="Shovel Knight" value="imagens/crossovers/shovel-knight.png">Shovel Knight (Shovel Knight)</option>
                     <option data-value="Black Knight" value="imagens/crossovers/black-knight.png">Black Knight (Shovel Knight)</option>
                     <option data-value="Plague Knight" value="imagens/crossovers/plague-knight.png">Plague Knight (Shovel Knight)</option>
@@ -185,6 +185,10 @@
                     <option data-value="Spongebob Squarepants" value="imagens/crossovers/spongebob-squarepants.png">SpongeBob Squarepants (Bob Esponja)</option>
                     <option data-value="Sandy Cheeks" value="imagens/crossovers/sandy-cheeks.png">Sandy Cheeks (Bob Esponja)</option>
                     <option data-value="Patrick Star" value="imagens/crossovers/patrick-star.png">Patrick Star (Bob Esponja)</option>
+                    <option data-value="Ahsoka" value="imagens/crossovers/ahsoka.png">Ahsoka (Star Wars)</option>
+                    <option data-value="Anakin Skywalker" value="imagens/crossovers/anakin.png">Anakin Skywalker (Star Wars)</option>
+                    <option data-value="Obi-wan Kenobi" value="imagens/crossovers/obi-wan.png">Obi-wan Kenobi (Star Wars)</option>
+                    <option data-value="Darth Vader" value="imagens/crossovers/darth-vader.png">Darth Vader (Star Wars)</option>
 
                     <option data-value="Yazika" value="imagens/crossovers/yaksa.png">Yazika (Coliseu de Clãs)</option>
                 </select>
@@ -192,34 +196,29 @@
                 <button onclick="ativar()" id="ativarCrossovers" class="estilizar-select estilizar-butão">Ativar Crossovers</button>
                 <button onclick="desativar()" id="desativarCrossovers" class="estilizar-select estilizar-butão display">Desativar Crossovers</button>
 
-                <h1 class="tituloInterface">Selecione a Season (Clãs de Season Específica)</h1>
-                <select class="estilizar-select" id="clã-season">
-                    <option value="4">Season 4</option>
-                    <option value="3">Season 3</option>
-                </select>
                 <h1 class="tituloInterface">Clã</h1>
                 <select class="estilizar-select" id="clã">
                     <option fundo-site="imagens/fundosSite/sem.png" degrade="imagens/degrade/degrade-sem.png" color-data="sem" data-value="imagens/fundos/fundo-sem.png" value="imagens/molduras/sem.png">-</option>
 
-                    <option fundo-site="imagens/fundosSite/cyan.png" degrade="imagens/degrade/degrade-cyan.png" color-data="cyan" data-value="imagens/fundos/fundo-cyan.png" value="imagens/molduras/aurora.png">Aurora</option>
+                    <option fundo-site="imagens/fundosSite/orange.png" degrade="imagens/degrade/degrade-cyan.png" color-data="cyan" data-value="imagens/fundos/fundo-cyan.png" value="imagens/molduras/aurora.png">Aurora</option>
         
-                    <option fundo-site="imagens/fundosSite/green.png" degrade="imagens/degrade/degrade-green.png" color-data="green" data-value="imagens/fundos/fundo-green.png" value="imagens/molduras/season3/bichos.png">Bichos do Mato</option>
+                    <option fundo-site="imagens/fundosSite/green.png" degrade="imagens/degrade/degrade-green.png" color-data="green" data-value="imagens/fundos/fundo-green.png" value="imagens/molduras/bichos.png">Bichos do Mato</option>
         
-                    <option fundo-site="imagens/fundosSite/white.png" degrade="imagens/degrade/degrade-white.png" color-data="white" data-value="imagens/fundos/fundo-white.png" value="imagens/molduras/complexo.png">Complexo do Corinthians</option>
+                    <option fundo-site="imagens/fundosSite/sem.png" degrade="imagens/degrade/degrade-white.png" color-data="white" data-value="imagens/fundos/fundo-white.png" value="imagens/molduras/complexo.png">Complexo do Corinthians</option>
         
-                    <option fundo-site="imagens/fundosSite/blue.png" degrade="imagens/degrade/degrade-blue.png" color-data="blue" data-value="imagens/fundos/fundo-blue.png" value="imagens/molduras/cruzeiro.png">Cruzeiro</option>
+                    <option fundo-site="imagens/fundosSite/sem.png" degrade="imagens/degrade/degrade-blue.png" color-data="blue" data-value="imagens/fundos/fundo-blue.png" value="imagens/molduras/cruzeiro.png">Cruzeiro</option>
         
-                    <option fundo-site="imagens/fundosSite/yellow.png" degrade="imagens/degrade/degrade-yellow.png" color-data="yellow" data-value="imagens/fundos/fundo-yellow.png" value="imagens/molduras/season3/firebirds.png">Firebirds</option>
+                    <option fundo-site="imagens/fundosSite/yellow.png" degrade="imagens/degrade/degrade-yellow.png" color-data="yellow" data-value="imagens/fundos/fundo-yellow.png" value="imagens/molduras/firebirds.png">Firebirds</option>
         
-                    <option fundo-site="imagens/fundosSite/red.png" degrade="imagens/degrade/degrade-red.png" color-data="red" data-value="imagens/fundos/fundo-red.png" value="imagens/molduras/season3/inimigos.png">Inimigos da Moda</option>
+                    <option fundo-site="imagens/fundosSite/red.png" degrade="imagens/degrade/degrade-red.png" color-data="red" data-value="imagens/fundos/fundo-red.png" value="imagens/molduras/inimigos.png">Inimigos da Moda</option>
         
-                    <option fundo-site="imagens/fundosSite/pink.png" degrade="imagens/degrade/degrade-pink.png" color-data="pink" data-value="imagens/fundos/fundo-pink.png" value="imagens/molduras/patota.png">Patota da Moneymatch</option>
+                    <option fundo-site="imagens/fundosSite/sem.png" degrade="imagens/degrade/degrade-pink.png" color-data="pink" data-value="imagens/fundos/fundo-pink.png" value="imagens/molduras/patota.png">Patota da Moneymatch</option>
         
                     <option fundo-site="imagens/fundosSite/orange.png" degrade="imagens/degrade/degrade-orange.png" color-data="orange" data-value="imagens/fundos/fundo-orange.png" value="imagens/molduras/ranked.png">Ranked Beasts</option>
         
                     <option fundo-site="imagens/fundosSite/purple.png" degrade="imagens/degrade/degrade-purple.png" color-data="purple" data-value="imagens/fundos/fundo-purple.png" value="imagens/molduras/strawberry.png">Strawberry Tea</option>
         
-                    <option fundo-site="imagens/fundosSite/black.png" degrade="imagens/degrade/degrade-black.png" color-data="black" data-value="imagens/fundos/fundo-black.png" value="imagens/molduras/season3/vasco.png">Vasco</option>
+                    <option fundo-site="imagens/fundosSite/black.png" degrade="imagens/degrade/degrade-black.png" color-data="black" data-value="imagens/fundos/fundo-black.png" value="imagens/molduras/vasco.png">Vasco</option>
                 </select>
                 <h1 id="hierarquia-titulo" class="display tituloInterface">Hierarquia no Clã</h1>
                 <select id="hierarquia" class="display estilizar-select">
@@ -240,7 +239,6 @@
 
     <div><img id="fundo-site" src="imagens/fundosSite/sem.png"></div>
     
-    <script src="js/season.js"></script>
     <script src="js/interface.js"></script>
     <script src="js/lendas.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
